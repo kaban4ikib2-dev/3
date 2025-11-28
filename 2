@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Сайт 10Л класу</title>
+<style>
+  :root{
+    --bg:#1e1e1e;
+    --card:#2a2a2a;
+    --accent:#c0c0c0;
+    --muted:#a0a0a0;
+    --text:#ffffff;
+    --header:#252525;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  body::before{
+    content:"";
+    position:fixed;
+    top:0;left:0;width:100%;height:100%;
+    background:radial-gradient(ellipse at top,#294a6d 0%,#1e1e1e 70%);
+    z-index:-3;
+  }
+
+  .container{width:94%;max-width:1100px;margin:0 auto;padding:20px 0;position:relative;z-index:2;}
+
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px;
+    background:linear-gradient(135deg,#2e3b4e,var(--header));
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 0 20px rgba(0,200,255,0.2);
+  }
+
+  .brand{display:flex;align-items:center;gap:14px}
+  .logo{
+    width:50px;
+    height:50px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#b0e6ff,#ffffff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    color:#00334d;
+    box-shadow:0 4px 12px rgba(0,200,255,0.5);
+  }
+
+  h1{font-size:24px;margin:0;text-shadow:0 0 8px rgba(255,255,255,0.3);}
+  p.lead{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+  .hero{padding:20px;background:var(--card);border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.5);}
+  h1,h1{margin-top:0;color:#b0e6ff;text-shadow:0 0 10px rgba(176,230,255,0.4);}
+  table{width:100%;border-collapse:collapse;margin-top:10px}
+  th,td{border:1px solid #444; padding:6px;text-align:left;font-size:14px;vertical-align:middle;}
+  th{background:#333}
+
+  .card{
+    background:rgba(42,42,42,0.9);
+    padding:16px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.4),0 0 10px rgba(176,230,255,0.1);
+  }
+
+  footer{
+    margin-top:auto;
+    padding:16px 0;
+    color:var(--muted);
+    text-align:center;
+    font-size:13px;
+    position:relative;
+    z-index:2;
+  }
+
+  .table-wrapper{overflow-x:auto}
+</style>
+</head>
+<body>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2> Розклад </h2>
+
+        <table>
+          <tr><td>1 урок</td><td>08:00 – 08:45</td></tr>
+          <tr><td>2 урок</td><td>08:50 – 09:35</td></tr>
+          <tr><td>3 урок</td><td>09:45 – 10:30</td></tr>
+          <tr><td>4 урок</td><td>10:40 – 11:25</td></tr>
+          <tr><td>5 урок</td><td>11:35 – 12:20</td></tr>
+          <tr><td>6 урок</td><td>12:25 – 13:10</td></tr>
+          <tr><td>7 урок</td><td>13:15 – 14:00</td></tr>
+          <tr><td>8 урок</td><td>14:10 – 14:55</td></tr>
+        </table>
+
+        <h3>Понеділок</h3>
+        <table>
+          <tr><td>Захист України 309/104 </td><td></td></tr>
+          <tr><td>Біологія 108 </td><td></td></tr>
+          <tr><td>Англійська мова 105/206 </td><td></td></tr>
+          <tr><td>Англійська мова 105/206</td><td></td></tr>
+          <tr><td>Фізкультура </td><td></td></tr>
+          <tr><td>Історія України 102 </td><td></td></tr>
+        </table>
+
+        <h3>Вівторок</h3>
+        <table>
+          <tr><td>Інформатика 207/206 </td><td></td></tr>
+          <tr><td>Хімія 202 </td><td></td></tr>
+          <tr><td>Громадянська освіта 102 </td><td></td></tr>
+          <tr><td>Алгебра 102 </td><td></td></tr>
+          <tr><td>Алгебра 102 </td><td></td></tr>
+          <tr><td>Мистецтво/Всесвітня історія 202 </td><td></td></tr>
+        </table>
+
+        <h3>Середа</h3>
+        <table>
+          <tr><td>Англійська мова 301/109 </td><td></td></tr>
+          <tr><td>Англійська мова 301/109 </td><td></td></tr>
+          <tr><td>Українська мова 108/107 спр </td><td></td></tr>
+          <tr><td>Українська мова 108/107 </td><td></td></tr>
+          <tr><td>Зарубіжна література 106 </td><td></td></tr>
+          <tr><td>Українська література 101 </td><td></td></tr>
+        </table>
+
+        <h3>Четвер</h3>
+        <table>
+          <tr><td>Географія 103 </td><td></td></tr>
+          <tr><td> Захист України 309/104 </td><td></td></tr>
+          <tr><td>Українська мова 102 </td><td></td></tr>
+          <tr><td>Фізкультура </td><td></td></tr>
+          <tr><td>Геометрія 102 </td><td></td></tr>
+          <tr><td>Геометрія 102 </td><td></td></tr>
+        </table>
+
+        <h3>П’ятниця</h3>
+        <table>
+          <tr><td>Англійська мова 102/302 </td><td></td></tr>
+          <tr><td>Історія України 305 спр </td><td></td></tr>
+          <tr><td>Фізика 210 </td><td></td></tr>
+          <tr><td>Фізика 210 </td><td></td></tr>
+          <tr><td>Біологія 203 </td><td></td></tr>
+        </table>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
